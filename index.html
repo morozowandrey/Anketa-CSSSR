@@ -1,23 +1,199 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="build/main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-</head>
-
-<body>
-
-
-
-
-
-</body>
-
-<script src="build/production.js"></script>
-
+  <head>
+    <title>nice time to work!</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="build/main.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="page-box wrapper clearfix">
+      <header class="header wrapper clearfix">
+        <div class="header-logo-box"><img class="header__logo" src="src/images/logo.png" alt="oops">
+          <p class="header__text">Секретный архив учреждения</p>
+        </div><img class="header__img" src="src/images/sekretno.png" alt="oops">
+      </header>
+      <section class="personalInfo wrapper clearfix"><img class="personalInfo__title" src="src/images/delo.png" alt="oops">
+        <div class="personalInfo-lineBox personalInfo-lineBox_top">
+          <p class="personalInfo__caption">Полное ФИО</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">Морозов Андрей Борисович</p><img class="personalInfo-input__img" src="src/images/underline1.png" alt="oops">
+          </div>
+        </div>
+        <div class="personalInfo-lineBox">
+          <p class="personalInfo__caption">Год рождения</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">1994</p><img class="personalInfo-input__img" src="src/images/underline2.png" alt="oops">
+          </div>
+        </div>
+        <div class="personalInfo-lineBox">
+          <p class="personalInfo__caption">Место жительства</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">г. Киев, Украина</p><img class="personalInfo-input__img" src="src/images/underline3.png" alt="oops">
+          </div>
+        </div>
+        <div class="personalInfo-lineBox">
+          <p class="personalInfo__caption">Скайп</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">injeansme</p><img class="personalInfo-input__img" src="src/images/underline4.png" alt="oops">
+          </div>
+        </div>
+        <div class="personalInfo-lineBox">
+          <p class="personalInfo__caption">Почта</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">andrey940@gmail.com</p><img class="personalInfo-input__img" src="src/images/underline5.png" alt="oops">
+          </div>
+        </div>
+        <p class="personalInfo__text">Выпускник<a class="personalInfo__link">htmlacademy.ru</a></p>
+        <div class="personalInfo-check-wrapper">
+          <form action="#">
+            <div class="personalInfo__checkBox personalInfo__checkBox_first">
+              <input class="personalInfo__check" type="radio" name="choose" id="radio1">
+              <label class="personalInfo__inner" for="radio1"></label>
+              <p class="personalInfo__check__text">Да</p>
+            </div>
+            <div class="personalInfo__checkBox">
+              <input class="personalInfo__check" type="radio" name="choose" id="radio2" checked>
+              <label class="personalInfo__inner" for="radio2"></label>
+              <p class="personalInfo__check__text">Нет</p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="skills wrapper clearfix">
+        <div class="skills-caption">
+          <h2 class="skills-caption__heading">Практические навыки</h2>
+          <p class="skills-caption__text">Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+        </div>
+        <div class="skills-set skills-set_first">
+          <form action="#">
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Методология БЭМ</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">jQuery</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Использую Grunt</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">HAML</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">SASS</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">LESS</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">CoffeeScript</p>
+            </div>
+          </form>
+        </div>
+        <div class="skills-set">
+          <form action="#">
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Jade</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Stylus</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Знаю (изучаю) Angular</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Верстка под Android</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Верстка под iOS</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check skills__check_win" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner skills__inner_win" for="checkbox1"></label>
+              <p class="skills__check__text">Верстка под Windows <br/>Phone</p>
+            </div>
+          </form>
+        </div>
+        <div class="skills-set skills-set_lust">
+          <form action="#">
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1">
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Верстка рассылок</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Адаптивная верстка</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Использую Dropbox</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Использую Gmail</p>
+            </div>
+            <div class="skills-skill">
+              <input class="skills__check" type="checkbox" name="choose" id="checkbox1" checked>
+              <label class="skills__inner" for="checkbox1"></label>
+              <p class="skills__check__text">Использую GitHub</p>
+            </div>
+            <div class="skills-skill"></div>
+          </form>
+        </div>
+        <div class="skills-slider-box">
+          <h2 class="skills-slider__caption">Уровень владения JavaScript</h2>
+        </div>
+        <div class="skills-slider">
+          <div class="skills-slider__progress"></div>
+          <div class="skills-slider__indicator"></div>
+        </div>
+        <div class="skills-slider__captions_wrapper">
+          <div class="skills-slider__captions">
+            <p class="skills-slider__skillLevel">Не владею</p>
+            <p class="skills-slider__skillLevel">Использую готовые решения</p>
+            <p class="skills-slider__skillLevel">Использую готовые решения <br/>и умею их переделывать</p>
+            <p class="skills-slider__skillLevel">Пишу сложные скрипты</p>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper clearfix">
+        <div class="personalInfo-lineBox">
+          <p class="personalInfo__caption">Дата заполнения</p>
+          <div class="personalInfo-input">
+            <p class="personalInfo-input__text">29.09.16</p><img class="personalInfo-input__img" src="src/images/underline6.png" alt="oops">
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="build/production.js"></script>
+  </body>
 </html>

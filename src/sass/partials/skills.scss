@@ -1,0 +1,175 @@
+.skills {
+
+	&-caption {
+		position: relative;
+		margin-left: 110px;
+
+		&__heading {
+			font: 800 23px $main-ff;
+			color: $brown;
+
+			margin: 0 0 15px 0;
+
+		}
+
+		&__text {
+			font: 400 14px $main-ff;
+			color: $gray;
+
+			margin: 0 130px 30px 0;
+		}
+
+		&__text:before {
+			font: 400 36px $main-ff;
+			
+			position: absolute;
+			left: -18px;
+			bottom: 13px;
+
+			content: '*';
+			color: $gray;
+		}
+	}
+
+	&-set {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 65px;
+	}
+
+	&-set_first {
+		margin: 0 0 70px 110px;
+	}
+
+	&-set_lust {
+		margin: 0 0 70px 45px;
+	}
+
+	&-skill {
+		position: relative;
+	}
+
+	&-skill_windows {
+		position: relative;
+	}
+
+	&__check {
+		cursor: pointer;
+
+		&__text {
+			font: 800 21px $main-ff;
+			color: $black;
+
+			display: inline-block;
+
+			margin-bottom: 10px;
+			margin-left: -13px;
+		}
+	}
+
+	&__check:not(checked) {
+		position: absolute;
+		opacity: 0;
+		z-index: 2;
+		height: 21px;
+		width: 21px;
+	}
+
+	&__check:not(checked) +  .skills__inner{
+		position: relative;
+		padding: 0 0 0 35px;
+		bottom: 10px;
+	}
+
+	&__check:not(checked) +  .skills__inner:before{
+		content: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/shape2.png);
+		position: absolute;
+		left: 0;
+		width: 22px;
+		height: 22px;
+	}
+
+	&__check:not(checked) +  .skills__inner:after{
+		content: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/shape2_chek.png);
+		position: absolute;
+		top: -10px;
+		left: 3px;
+		width: 16px;
+		height: 16px;
+		opacity: 0;
+		transition: all .2s;
+	}
+
+	&__check_win:not(checked) +  .skills__inner:before{
+		bottom: 5px;
+	}
+
+	&__check_win:not(checked) +  .skills__inner:after{
+		top: -37px;
+	}
+
+	&__check:checked +  .skills__inner:after{
+		opacity: 1;
+	}
+
+	/////////////////////////SLIDER//////////////////////////
+	
+	&-slider-box {
+
+	}
+
+	&-slider__caption {
+		font: 800 23px $main-ff;
+		color: $brown;
+
+		margin: 0 0 30px 110px;
+	}
+
+	&-slider {
+		position: relative;
+
+		height: 65px;
+		width: 76%;
+
+		margin:0 0 0px 110px;
+
+		&__progress {
+			content: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/slider_rail.png);
+
+		}
+
+		&__indicator  {
+			position: absolute;
+			top: -16px;
+
+		}
+
+		&__indicator:before  {
+			content: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/slider_tip.png);
+			position: absolute;
+			left: -7px;
+
+		}
+	}
+
+	&-slider__captions {
+	    display: flex;
+	    justify-content: space-between;
+
+		margin-left: 110px;
+	    margin-right: 130px;
+	}
+
+	&-slider__captions_wrapper {
+		position: relative;
+		top: -34px;
+	}
+
+	&-slider__skillLevel {
+
+		font: 800 13px $main-ff;
+		color: $brown;
+ 
+	}
+
+}

@@ -20,6 +20,16 @@ module.exports = function(grunt) {
                 dest: 'build/production.min.js'
             }
         },
+        pug: {
+            dist: {
+                options: {
+                    pretty: true,
+                },
+                files: {
+                    'index.html': 'src/pug/**/*.pug'
+                }
+            }
+        },
         imagemin: {
             dynamic: {
                 files: [{
@@ -64,6 +74,12 @@ module.exports = function(grunt) {
                     livereload: true
                 },
             },
+            pug: {
+                files: ['src/pug/**/*.pug'],
+                tasks: ['pug'],
+                options: {
+                },
+            }
         }
 
     });
@@ -74,8 +90,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-pug');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin','sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin','sass', 'watch', 'pug']);
 
 };

@@ -1,3 +1,23 @@
 .header {
 	
+	&-logo-box {
+		display: inline-block;
+		margin: 70px 0 0 50px;
+	}
+
+	&__logo {
+		
+	}
+
+	&__text {
+		font: 400 10px $main-ff;
+		margin-left: 7px;
+		margin-top: -6px;
+
+	}
+
+	&__img {
+		float: right;
+		margin: 50px 55px 40px 0;
+	}
 }

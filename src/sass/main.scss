@@ -6,7 +6,8 @@
 
 // partials
 @import 'partials/header';
-@import 'partials/banner';
+@import 'partials/personalInfo';
+@import 'partials/skills';
 @import 'partials/footer';
 
 //
@@ -25,13 +26,23 @@ html {
 body {
   margin: 0;
   height: 100%;
+  background: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/bg_color.png);
+}
+
+.page-box {
+  background: url(/D:/SINUS/WWW/Portfolio/Anketa/src/images/bg.png);
 }
 
 .wrapper{
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
-    height: 100%;
 }
+
+// .wrapper2{
+//     max-width: 770px;
+//     margin: 0 auto;
+// }
+
 .clearfix:after { 
    content: '.';
    visibility: hidden;

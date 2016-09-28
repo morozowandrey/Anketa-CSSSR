@@ -1,0 +1,179 @@
+doctype html
+html
+	head
+		title nice time to work!
+
+		meta(charset='utf-8', name='viewport', content='width=device-width, initial-scale=1')
+
+		link(type="text/css" rel='stylesheet',href='build/main.css')
+		link(type="text/css" rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		link(type="text/css" rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+	
+	body
+		.page-box.wrapper.clearfix
+			header.header.wrapper.clearfix
+				.header-logo-box
+					img.header__logo(src="src/images/logo.png", alt="oops")
+					p.header__text Секретный архив учреждения
+				
+				img.header__img(src="src/images/sekretno.png", alt="oops")
+
+			section.personalInfo.wrapper.clearfix
+				img.personalInfo__title(src="src/images/delo.png", alt="oops")
+
+				.personalInfo-lineBox.personalInfo-lineBox_top
+					p.personalInfo__caption Полное ФИО
+					.personalInfo-input
+						p.personalInfo-input__text Морозов Андрей Борисович
+						img.personalInfo-input__img(src="src/images/underline1.png", alt="oops")
+
+				.personalInfo-lineBox
+					p.personalInfo__caption Год рождения
+					.personalInfo-input
+						p.personalInfo-input__text 1994
+						img.personalInfo-input__img(src="src/images/underline2.png", alt="oops")
+
+				.personalInfo-lineBox
+					p.personalInfo__caption Место жительства
+					.personalInfo-input
+						p.personalInfo-input__text г. Киев, Украина
+						img.personalInfo-input__img(src="src/images/underline3.png", alt="oops")
+
+				.personalInfo-lineBox
+					p.personalInfo__caption Скайп
+					.personalInfo-input
+						p.personalInfo-input__text injeansme
+						img.personalInfo-input__img(src="src/images/underline4.png", alt="oops")
+
+				.personalInfo-lineBox
+					p.personalInfo__caption Почта
+					.personalInfo-input
+						p.personalInfo-input__text andrey940@gmail.com
+						img.personalInfo-input__img(src="src/images/underline5.png", alt="oops")
+
+				p.personalInfo__text Выпускник
+					a.personalInfo__link htmlacademy.ru
+
+				.personalInfo-check-wrapper
+					form(action='#')
+						.personalInfo__checkBox.personalInfo__checkBox_first
+							input.personalInfo__check(type="radio", name="choose", id="radio1")
+							label.personalInfo__inner(for='radio1')
+							p.personalInfo__check__text Да
+
+						.personalInfo__checkBox
+							input.personalInfo__check(type="radio", name="choose", id="radio2" checked)
+							label.personalInfo__inner(for='radio2')
+							p.personalInfo__check__text Нет
+
+			section.skills.wrapper.clearfix
+				.skills-caption
+					h2.skills-caption__heading Практические навыки
+					p.skills-caption__text Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+				.skills-set.skills-set_first
+					form(action='#')
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Методология БЭМ
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text jQuery
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Использую Grunt
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text HAML
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text SASS
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text LESS
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text CoffeeScript
+
+				.skills-set
+					form(action='#')
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Jade
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Stylus
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Знаю (изучаю) Angular
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Верстка под Android
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Верстка под iOS
+						.skills-skill
+							input.skills__check.skills__check_win(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner.skills__inner_win(for='checkbox1')
+							p.skills__check__text Верстка под Windows <br/>Phone
+
+				.skills-set.skills-set_lust
+					form(action='#')
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1")
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Верстка рассылок
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Адаптивная верстка
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Использую Dropbox
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Использую Gmail
+						.skills-skill
+							input.skills__check(type="checkbox", name="choose", id="checkbox1" checked)
+							label.skills__inner(for='checkbox1')
+							p.skills__check__text Использую GitHub
+						.skills-skill
+
+				.skills-slider-box
+					h2.skills-slider__caption Уровень владения JavaScript
+
+				.skills-slider
+					.skills-slider__progress
+					.skills-slider__indicator
+
+				.skills-slider__captions_wrapper
+					.skills-slider__captions
+						p.skills-slider__skillLevel Не владею
+						p.skills-slider__skillLevel Использую готовые решения
+						p.skills-slider__skillLevel Использую готовые решения <br/>и умею их переделывать
+						p.skills-slider__skillLevel Пишу сложные скрипты
+
+			footer.wrapper.clearfix
+				.personalInfo-lineBox
+					p.personalInfo__caption Дата заполнения
+					.personalInfo-input
+						p.personalInfo-input__text 29.09.16
+						img.personalInfo-input__img(src="src/images/underline6.png", alt="oops")
+
+		
+		
+		script(src='build/production.js')
